@@ -49,7 +49,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
     // Allow local storage.
     webView.getSettings().setDomStorageEnabled(true);
     webView.getSettings().setLoadWithOverviewMode(true);
-    webView.getSetting().setUseWideViewPort(true);
+    webView.getSettings().setUseWideViewPort(true);
     
 
     methodChannel = new MethodChannel(messenger, "plugins.flutter.io/webview_" + id);
