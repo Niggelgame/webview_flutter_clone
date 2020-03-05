@@ -50,6 +50,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
     webView.getSettings().setDomStorageEnabled(true);
     webView.getSettings().setLoadWithOverviewMode(true);
     webView.getSettings().setUseWideViewPort(true);
+    webView.getSettings().setBuiltInZoomControls(true);
     
 
     methodChannel = new MethodChannel(messenger, "plugins.flutter.io/webview_" + id);
